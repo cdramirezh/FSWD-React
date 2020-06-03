@@ -23,10 +23,10 @@ class DishDetail extends Component {
 
     const commentList = comments.map( (comment) => {
       return(
-        <div key={comment.id}>
-            <li>{comment.comment}</li>
-            <li>-- {comment.author}, {comment.date}</li>
-        </div>
+        <li key={comment.id}>
+            <p>{comment.comment}</p>
+            <p>-- {comment.author}, {comment.date}</p>
+        </li>
       );
     });
 
